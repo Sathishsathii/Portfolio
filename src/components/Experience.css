@@ -1,0 +1,103 @@
+/* Experience Section */
+.experience {
+    display: flex;
+    justify-content: space-between; /* Space between image and text */
+    align-items: flex-start; /* Align items at the top */
+    padding: 4rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #f9f9f9, #ffffff); /* Light gradient */
+    color: #333; /* Neutral text color */
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* Left Image Section */
+  .experience-image {
+    flex: 1; /* Allow the image to take up less space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: flex-start; /* Align the image to the top initially */
+    margin-right: 2rem; /* Add spacing between image and text */
+    margin-top: 6rem; /* Push the image down explicitly */
+  }
+  
+  .experience-image img {
+    max-width: 70%; /* Ensure the image scales appropriately */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+    /*box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);  Subtle shadow */
+  }
+  
+  
+  /* Right Content Section */
+  .experience-container {
+    flex: 2; /* Allow the text content to take more space */
+    max-width: 800px; /* Limit the width of the text */
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Title Styling */
+  .experience-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2e5bff; /* Eye-catching blue */
+    margin-bottom: 2rem;
+  }
+  
+  /* Individual Job */
+  .job {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd; /* Separator between jobs */
+    padding-bottom: 1.5rem;
+  }
+  
+  .job-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4a4a4a; /* Dark gray */
+    margin-bottom: 0.5rem;
+  }
+  
+  .job-company {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555; /* Subtle gray */
+    margin-bottom: 0.3rem;
+  }
+  
+  .job-duration {
+    font-size: 1rem;
+    color: #999; /* Light gray */
+    margin-bottom: 1rem;
+  }
+  
+  .job-responsibilities {
+    padding-left: 1.5rem;
+    list-style: disc;
+    line-height: 1.8;
+  }
+  
+  .job-responsibilities li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .experience {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center; /* Center-align content */
+    }
+  
+    .experience-image {
+      margin-bottom: 2rem; /* Add spacing below image */
+      margin-right: 0; /* Remove right margin */
+    }
+  
+    .experience-container {
+      max-width: 100%; /* Allow text to take full width */
+    }
+  
+    .experience-title {
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,107 @@
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between; /* Distribute space between image and text */
+    align-items: flex-start; /* Align content to the top */
+    padding: 4rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #fafafa, #ffffff); /* Light gradient */
+    color: #333; /* Neutral text color */
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Ensure relative positioning for adjustments */
+  }
+  
+  /* About Image Container */
+  .about-image {
+    flex: 1; /* Allow it to take equal space */
+    display: flex;
+    max-width: 60%;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top of its container */
+    margin-top: 4rem; /* Push the image downward explicitly */
+  }
+  
+  .about-image img {
+    max-width: 80%; /* Scale the image within its container */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    /*box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);  Subtle shadow */
+  }
+  
+  /* About Text Container */
+  .about-container {
+    flex: 2; /* Allow text content to take more space */
+    max-width: 800px; /* Limit the width of the text */
+    text-align: left;
+  }
+  
+  /* Title Styling */
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2e5bff; /* Eye-catching blue */
+    margin-bottom: 2rem;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4a4a4a; /* Dark gray */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ddd; /* Subtle underline */
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Text Styling */
+  .about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
+  /* Education List */
+  .education-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .education-list li {
+    margin-bottom: 1.5rem;
+  }
+  
+  .education-date {
+    font-style: italic;
+    color: #555; /* Subtle gray */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column; /* Stack image and text vertically */
+      justify-content: center; /* Center align for smaller screens */
+    }
+  
+    .about-image {
+      margin-top: 2rem; /* Adjust spacing for smaller screens */
+      margin-right: 0; /* Remove right margin */
+      max-width: 60%;
+    }
+  
+    .about-container {
+      text-align: center; /* Center text content */
+    }
+  
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .about-text {
+      font-size: 1rem;
+    }
+  }
+  

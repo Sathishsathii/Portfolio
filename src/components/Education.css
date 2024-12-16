@@ -1,0 +1,120 @@
+/* Education Section */
+.education {
+    display: flex;
+    justify-content: space-between; /* Align timeline and illustration */
+    align-items: flex-start; /* Align items at the top */
+    padding: 4rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #fafafa, #ffffff); /* Light gradient */
+    color: #333; /* Neutral text color */
+    min-height: 100vh; /* Full viewport height */
+    gap: 2rem; /* Add spacing between the timeline and image */
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  /* Education Timeline Container */
+  .education-container {
+    flex: 1; /* Allow timeline to take up equal space */
+    max-width: 50%; /* Limit width to prevent overlap */
+  }
+  
+  .education-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2e5bff; /* Eye-catching blue */
+    margin-bottom: 2rem;
+  }
+  
+  /* Timeline Section */
+  .education-timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 3px solid #ddd; /* Vertical line for the timeline */
+  }
+  
+  .timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -12px; /* Position the dot */
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #2e5bff;
+    border-radius: 50%; /* Circle */
+  }
+  
+  .degree-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4a4a4a; /* Dark gray */
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-content {
+    margin-left: 1rem;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .degree-info {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  .graduation-date {
+    font-style: italic;
+    color: #555; /* Subtle gray */
+  }
+  
+  /* Illustration Section */
+  .education-illustration {
+    flex: 1; /* Allow the illustration to take up equal space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: flex-start; /* Align image at the top */
+    margin-top: 10rem; /* Add spacing to push the image down */
+  }
+  
+  .education-illustration img {
+    max-width: 60%; /* Ensure the image scales within its container */
+    height: auto;
+    border-radius: 10px; /* Optional rounded corners */
+    /*box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);  Subtle shadow */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .education {
+      flex-direction: column; /* Stack timeline and illustration vertically */
+      align-items: center; /* Center-align content */
+    }
+  
+    .education-container {
+      max-width: 100%; /* Remove width limit */
+    }
+  
+    .education-illustration {
+      margin-top: 2rem; /* Add spacing for smaller screens */
+    }
+  
+    .education-title {
+      text-align: center;
+    }
+  
+    .education-timeline {
+      padding-left: 0;
+      border-left: none; /* Remove vertical line */
+    }
+  
+    .timeline-content {
+      text-align: center;
+    }
+  }
+  

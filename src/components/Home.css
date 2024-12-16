@@ -1,0 +1,231 @@
+/* Home Section Layout */
+/*.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    /*background: url('/src/components/assets/waves.jpg') no-repeat center center; 
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  
+  
+  .home-left {
+    flex: 1; 
+    padding-right: 2rem; 
+    margin-left: 3rem;
+    transform: translateY(-25px);
+  }
+  
+  .home-greeting {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #4a4a4a; 
+    margin-bottom: 0.5rem;
+  }
+  
+  .home-name {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #2e5bff; 
+    margin-bottom: 1rem;
+  }
+  
+  .home-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000; 
+    margin-bottom: 1rem;
+  }
+  
+  .home-description {
+    font-size: 1.2rem;
+    color: #555; 
+    line-height: 1.8;
+    max-width: 80%;
+  }
+  
+  .home-right {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .home-image {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Responsive Design 
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column; /* Stack content vertically 
+      text-align: center; 
+    }
+  
+    .home-left {
+      padding-right: 0;
+      margin-left: 0;
+      transform: translateY(-10px);
+    }
+  
+    .home-name {
+      font-size: 3rem;
+    }
+  
+    .home-title {
+      font-size: 1.8rem;
+    }
+  
+    .home-description {
+      font-size: 1rem;
+      max-width: 100%;
+    }
+  
+    .home-right {
+      margin-top: 2rem;
+    }
+  
+    .home-image {
+      max-width: 80%;
+    }
+  }
+  */
+
+  /* Home Section Layout */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white; /* Neutral text color */
+    text-transform: mixed; /* Make text lowercase */
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  /* Left Section */
+  .home-left {
+    flex: 1;
+    padding-right: 2rem;
+    margin-left: 3rem;
+    transform: translateY(-25px);
+  }
+  
+  .home-greeting {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .home-name {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #2e5bff;
+    margin-bottom: 1rem;
+    display: inline-flex; /* Ensure letters align horizontally */
+  }
+  
+  /* Animation for Jumping Letters */
+  .letter {
+    display: inline-block;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start below */
+    animation: jumpIn 0.5s ease forwards;
+  }
+  
+  @keyframes jumpIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start below */
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-10px); /* Jump up */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Settle back in place */
+    }
+  }
+  
+  /* Additional Styles */
+  .space {
+    margin-right: 0.3rem; /* Add spacing for spaces */
+  }
+  
+  .home-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  
+  .home-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 80%;
+  }
+  
+  /* Right Section */
+  .home-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .home-left {
+      padding-right: 0;
+      margin-left: 0;
+      transform: translateY(-10px);
+    }
+  
+    .home-name {
+      font-size: 3rem;
+    }
+  
+    .home-title {
+      font-size: 1.8rem;
+    }
+  
+    .home-description {
+      font-size: 1rem;
+      max-width: 100%;
+    }
+  
+    .home-right {
+      margin-top: 2rem;
+    }
+  
+    .home-image {
+      max-width: 80%;
+    }
+  }
+  

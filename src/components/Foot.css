@@ -1,0 +1,48 @@
+/* Footer Section */
+.footer {
+  background-color: #2a2a2a; /* Dark gray background color similar to the uploaded image */
+  color: #fff; /* White text color */
+  padding: 0.5rem 2rem; /* Adjust padding */
+  font-family: 'Poppins', sans-serif;
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Vertically align items */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Footer Left Section */
+.footer-left {
+  font-size: 1rem; /* Text size similar to the uploaded image */
+  font-style: italic; /* Italic style for 'Handcrafted By' */
+  font-family: 'Dancing Script', cursive; /* Use a handwritten font style */
+
+}
+
+/* Footer Info Section */
+.footer-info {
+  font-size: 1rem; /* Adjust font size */
+  font-family: 'Dancing Script', cursive; /* Use a handwritten font style */
+  margin-left: -280px;
+}
+
+/* Visitor Counter Section */
+.visitor-counter {
+  font-size: 1rem; /* Match size with other text */
+  color: #fff;
+  text-align: right; /* Align to the right */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center-align content */
+  }
+
+  .footer-left,
+  .footer-info,
+  .visitor-counter {
+    margin-bottom: 0.5rem; /* Add space between sections */
+  }
+}

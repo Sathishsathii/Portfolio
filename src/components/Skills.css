@@ -1,0 +1,85 @@
+/* Skills Section */
+.skills {
+  padding: 4rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #ffffff, #f9f9f9);
+  color: #333;
+  text-align: center;
+}
+
+/* Title Styling */
+.skills-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2e5bff;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+/* Skills Container */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 2rem;
+}
+
+/* Skills Category */
+.skills-category {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap logos to the next line if necessary */
+  gap: 1.5rem; /* Space between logos */
+}
+
+.skill-logo {
+  width: 60px; /* Uniform width */
+  height: 60px; /* Uniform height */
+  object-fit: contain; /* Ensures images maintain aspect ratio within the specified dimensions */
+  transition: transform 0.3s ease;
+}
+
+.skill-logo:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .skill-logo {
+    width: 50px; /* Smaller logos on smaller screens */
+    height: 50px; /* Maintain uniform size */
+  }
+}
+#skills {
+  padding-top: 80px; /* Add padding to prevent overlap */
+  margin-top: -80px; /* Adjust positioning */
+}
